@@ -1,0 +1,42 @@
+# EUR Receivable – Technical Specification
+
+**Created by:** Liam Nelson  
+**Updated by:** Liam Nelson  
+**Date Created:** 24 April 2026  
+**Date Updated:** 24 April 2026  
+**Version:** 0.1  
+**LLM Used:** Copilot  
+
+**Role:** Financial Analyst / Treasury Analyst  
+**Audience:** CFO or Director of Treasury  
+
+**Purpose:** Provide a professional, quantitative specification outlining the analytical structure for evaluating FX hedging alternatives.
+
+---
+
+## 1. Problem Statement
+
+Our company is a U.S.–based solar importing business expecting to **receive EUR 4,500,000 in one year**, as indicated in the model: “US Based Solar importing company to receive $4.5M EUR in one year.” This creates exposure to **EUR/USD depreciation**, which would reduce the USD value of the receivable at settlement.
+
+The objective is to design and evaluate alternative hedging strategies—**forward**, **money market**, and **option‑based**—to protect the USD value of this EUR receivable over a 12‑month horizon. The analysis supports **corporate treasury decision‑making**, balancing certainty of proceeds against potential upside from favorable FX moves.
+
+- **Exposure type:** EUR receivable  
+- **Foreign currency amount:** EUR 4,500,000  
+- **Time horizon:** 1 year  
+- **Objective:** Maximize and stabilize USD proceeds while understanding trade‑offs between cost, certainty, and upside  
+- **Decision context:** Corporate treasury risk management for a U.S. importer
+
+---
+
+## 2. Inputs (Known Variables)
+
+| Variable        | Description                         | Unit        | Example / Value | Source      |
+|----------------|-------------------------------------|-------------|----------------:|-------------|
+| `FC_AMT`       | Foreign-currency receivable         | EUR         | 4,500,000       | Model       |
+| `S₀`           | Current EURUSD spot rate            | USD/EUR     | 1.1517          | Model       |
+| `F₀`           | 1-year EURUSD forward rate          | USD/EUR     | 1.0875          | Model       |
+| `r_USD`        | USD 1-year interest rate            | %           | 3.68%           | Model       |
+| `r_EUR`        | EUR 1-year interest rate            | %           | 2.799%          | Model       |
+| `t`            | Time to maturity                    | Years       | 1               | Derived     |
+| `K_put`        | EUR Put strike                      | USD/EUR     | N/A (not used)  | Not modeled |
+| `K_call`       | EUR Call strike                     | USD/EUR     | Not specified  
