@@ -1,4 +1,4 @@
-# Technical Specification: EUR Payable Hedging Analysis
+# Technical Specification: EUR Receivable Hedging Analysis
 
 **Created by:** Liam Nelson  
 **Updated by:** Liam Nelson  
