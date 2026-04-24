@@ -27,7 +27,7 @@ Our US-based solar importing company expects to pay €4,500,000 in 12 months, e
 
 ## 2. Inputs (Known Variables)
 
-| Variable | Description | Unit | Example | Source |
+| Variable | Description | Unit | Amount | Source |
 |-----------|-------------|------|----------|--------|
 | `FC_AMT` | Foreign-currency payable | EUR | 4,500,000 | Company data |
 | `S_0` | Current EUR/USD spot rate | USD/EUR | 1.1517 | Market data |
@@ -88,14 +88,18 @@ Our US-based solar importing company expects to pay €4,500,000 in 12 months, e
 
 ## 6. Sensitivity Plan
 
-> Vary the EUR/USD spot rate at maturity ($S_T$) from 1.0517 to 1.1517+ in incremental steps.  
-> For each rate, compute the total USD outflows under the Unhedged, Forward Hedge, Money Market Hedge, and Option Hedge strategies.  
-> Present the results as a side-by-side comparison matrix and plot them on a line chart to visualize cost crossovers and identify the winning strategy under each FX regime.
+ Vary the EUR/USD spot rate at maturity ($S_T$) from 1.0517 to 1.1517+ in incremental steps.  
+ For each rate, compute the total USD outflows under the Unhedged, Forward Hedge, Money Market Hedge, and Option Hedge strategies.  
+ Present the results as a side-by-side comparison matrix and plot them on a line chart to visualize cost crossovers and identify the winning strategy under each FX regime.
 
 ---
 
 ## 7. Limitations & Next Steps
 
-> This specification does not incorporate implied volatility dynamics, bid-ask spreads, transaction costs, or taxes, relying on the assumption of perfectly liquid and frictionless markets. 
-> 
-> The immediate next step is to finalize the Excel model build using this specified logic to quantify exactly what the USD cash outflows will be under each structure and to automatically determine the lowest-cost strategy across all future spot rate scenarios.
+ This specification does not incorporate implied volatility dynamics, bid-ask spreads, transaction costs, or taxes, relying on the assumption of perfectly liquid and frictionless markets. 
+
+The next step
+1. **Deliver a polished, executive‑ready memo** summarizing the FX hedge analysis and recommending the best strategy.  
+2. **Write a structured AI prompt** capable of regenerating the spreadsheet model — demonstrating the ability to convert domain knowledge into machine‑readable instructions.  
+3. Use Stage 2 spreadsheet outputs and this specification as the foundation for both deliverables.  
+4. Generate a draft using an LLM, then refine it with your own analysis and judgment.  
