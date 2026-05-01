@@ -135,7 +135,7 @@ This multi-stage, version-controlled approach ensures total model reproducibilit
 ### 3. Accounting & Audit Integration
 A critical component of executing corporate hedges is compliance with accounting standards, such as ASC 815, which accounting firms audit rigorously. To utilize hedgeing where FX gains or losses on the Put Option or Forward contract are temporarily deferred in Other Comprehensive Income (OCI) rather than immediately creating volatility in Net Income, a company must formally document the hedge at inception and provide hedge effectiveness proof.
 
-This repository serves as a perfect artifact for this exact requirement. The Stage 1 Memo and Stage 3 Technical Specification act as the formal hedge accounting documentation, clearly identifying the €4.5M foreign currency receivable as the hedged item and the chosen strategy as the hedging instrument. Furthermore, because these documents are stored in GitHub, the commit history provides an immutable, timestamped audit trail. When auditors review the company's books, the repository serves as evidence that the corporate treasury team executed the hedge based on sound mathematical strategy.
+This repository serves as a perfect artifact for this exact requirement. The Stage 1 Memo and Stage 3 Technical Specification act as the formal hedge accounting documentation, clearly identifying the €4.5M foreign currency receivable as the hedged item and the chosen strategy as the hedging instrument. Furthermore, because these documents are stored in GitHub, the commit history provides an immutable, timestamped audit trail. When auditors review the company's books, the repository serves as evidence that the company executed the hedge based on sound mathematical strategy.
 
 
 
